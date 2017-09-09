@@ -1,12 +1,12 @@
 
 #ifndef CAR_H
 #define CAR_H
-#include "DC_Motor.h"
+#include "DcMotor.h"
 class Car {
 private:
   int speed;
-  DC_Motor motor1;
-  DC_Motor motor2;
+  DcMotor motor1;
+  DcMotor motor2;
 
 public:
   Car(int motor1For, int motor1Back, int motor2For, int motor2Back);

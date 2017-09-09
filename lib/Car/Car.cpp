@@ -1,8 +1,8 @@
 #include "Car.h"
 
 Car::Car(int motor1For, int motor1Back, int motor2For, int motor2Back) {
-  DC_Motor motorc1 = DC_Motor(motor1For, motor1Back);
-  DC_Motor motorc2 = DC_Motor(motor2For, motor2Back);
+  DcMotor motorc1 = DcMotor(motor1For, motor1Back);
+  DcMotor motorc2 = DcMotor(motor2For, motor2Back);
   motor1 = motorc1;
   motor2 = motorc2;
 }
