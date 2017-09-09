@@ -3,8 +3,8 @@
 #define  DC_Motor_H
 class DC_Motor{
 private:
-  int pin_1;
-  int pin_2;
+  int forwardPin;
+  int backwardPin;
   int motor_speed;
 
 public:

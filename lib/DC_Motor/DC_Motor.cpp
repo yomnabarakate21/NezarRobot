@@ -1,23 +1,23 @@
 #include "Arduino.h"
 #include"DC_Motor.h"
 
-  DC_Motor:: DC_Motor(int pin1,int pin2){
-     pinMode(pin1,OUTPUT);
-     pinMode(pin2,OUTPUT);
-      pin_1=pin1;
-     pin_2 =pin2;
+  DC_Motor:: DC_Motor(int forwardPin,int backwardPin){
+     pinMode(forwardPin,OUTPUT);
+     pinMode(backwardPin,OUTPUT);
+     this->forwardPin=forwardPin;
+     this->backwardPin =backwardPin;
 
      }
 void DC_Motor:: forward()
 {
-  digitalWrite(pin_1,HIGH);
-  digitalWrite(pin_2,LOW);
+  digitalWrite(forwardPin,HIGH);
+  digitalWrite(backwardPin,LOW);
 
 }
 void DC_Motor:: backward()
 {
-  digitalWrite(pin_1,LOW);
-    digitalWrite(pin_2,HIGH);
+  digitalWrite(forwardPin,LOW);
+    digitalWrite(backwardPin,HIGH);
 
 }
 void DC_Motor:: setSpeed(int speed)
@@ -26,17 +26,17 @@ void DC_Motor:: setSpeed(int speed)
 }
 void DC_Motor:: forwardwithSpeed()
 {
-  analogWrite(pin_1,motor_speed);
-  analogWrite(pin_2,0);
+  analogWrite(forwardPin,motor_speed);
+  analogWrite(backwardPin,0);
 }
 void  DC_Motor:: backwardwithSpeed()
 {
-  analogWrite(pin_1,0);
-  analogWrite(pin_2,motor_speed);
+  analogWrite(forwardPin,0);
+  analogWrite(backwardPin,motor_speed);
 
 }
 void  DC_Motor:: stop()
 {
-  digitalWrite(pin_1,LOW);
-  digitalWrite(pin_2,LOW);
+  digitalWrite(forwardPin,LOW);
+  digitalWrite(backwardPin,LOW);
 }
