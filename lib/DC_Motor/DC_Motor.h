@@ -1,7 +1,7 @@
 
 #ifndef DC_Motor_H
-#define  DC_Motor_H
-class DC_Motor{
+#define DC_Motor_H
+class DC_Motor {
 private:
   int forwardPin;
   int backwardPin;
