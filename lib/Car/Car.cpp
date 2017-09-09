@@ -15,26 +15,26 @@
   }
   void Car:: forward()
   {
-    motor1.Forward();
-    motor2.Forward();
+    motor1.forward();
+    motor2.forward();
   }
   void Car:: backward()
   {
-    motor1.Backward();
-    motor2.Backward();
+    motor1.backward();
+    motor2.backward();
   }
   void Car:: right()
   {
-    motor1.Backward();
-    motor2.Forward();
+    motor1.backward();
+    motor2.forward();
   }
   void Car:: left()
   {
-    motor1.Forward();
-    motor2.Backward();
+    motor1.forward();
+    motor2.backward();
   }
   void Car:: stop()
   {
-    motor1.Stop();
-    motor2.Stop();
+    motor1.stop();
+    motor2.stop();
   }
