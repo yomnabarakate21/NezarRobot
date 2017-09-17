@@ -7,6 +7,7 @@ private:
   int pin_2;
   int motor_speed;
 public:
+DC_Motor();
 DC_Motor(int pin1, int pin2);
 void Forward();
 void Backward();

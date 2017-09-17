@@ -1,5 +1,9 @@
 #include "Arduino.h"
 #include"DC_Motor.h"
+DC_Motor:: DC_Motor(){
+  
+}
+
 
   DC_Motor:: DC_Motor(int pin1,int pin2){
      pinMode(pin1,OUTPUT);
