@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "Car.h"
-#include "DC_Motor.h"
+#include "DcMotor.h"
 
 void setup() {
 
